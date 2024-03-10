@@ -5,3 +5,5 @@ randomwalk1.py contains the code to print the randomwalk on streamlit and print 
 test.py contains code to just print the animation of an array or path. (but it is not working - output blank graph)
 
 randomwalk2.py contains code for prinitng random walk and animation on streamlit but only blank graph is getting printed
+
+randomwalk_final.py contains the entire code for the plotting of graph and random walk (not using animation) in streamlit local host
