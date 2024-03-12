@@ -2,6 +2,8 @@ import networkx as nx
 import random
 import streamlit as st
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('TkAgg') 
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
