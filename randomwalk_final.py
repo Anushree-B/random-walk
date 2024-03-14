@@ -2,9 +2,7 @@ import networkx as nx
 import random
 import streamlit as st
 import matplotlib.pyplot as plt
-'''import matplotlib
-matplotlib.use('TkAgg') 
-'''
+
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.title("Random walk")
@@ -17,8 +15,8 @@ e = st.number_input("Enter the number of edges:", min_value=1, value=5, step=1)
 arr = []
 
 for i in range(e):
-    v1 = st.number_input(f"Enter v1 for the {i+1}th edge", min_value=1, value=1, step=1)
-    v2 = st.number_input(f"Enter v2 for the {i+1}th edge", min_value=1, value=2, step=1)
+    v1 = st.number_input(f"Enter v1 for edge {i+1}", min_value=1, value=1, step=1)
+    v2 = st.number_input(f"Enter v2 for edge {i+1}", min_value=1, value=2, step=1)
     arr.append((v1, v2))
 
 # Add edges to the graph (you can customize this based on your specific graph)
