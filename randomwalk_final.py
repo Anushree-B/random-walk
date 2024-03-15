@@ -48,9 +48,9 @@ def random_walk(graph, start_node, steps):
 st.pyplot()
 # Perform a random walk starting from a random node with 5 steps
 walk_result=[]
-start_node = st.button("Click to start random walk from a random node")
-if start_node:
-    start_node = st.number_input("Enter the starting vertex vertices:", min_value=1, max_value = v, value=1, step=1)
+start_node = st.number_input("Enter the starting vertex vertices:", min_value=1, max_value = v, value=1, step=1)
+button = st.button("Click to start random walk from a random node")
+if button:
     walk_result = random_walk(graph, start_node, steps=5)
 
 
